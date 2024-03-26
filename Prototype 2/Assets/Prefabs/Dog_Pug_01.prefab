@@ -2603,7 +2603,7 @@ Transform:
   m_GameObject: {fileID: 3408027701660928506}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0.032037117}
+  m_LocalPosition: {x: -0.0066, y: 0.036, z: 0.032037117}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4843,6 +4843,9 @@ GameObject:
   - component: {fileID: 4029511003765453390}
   - component: {fileID: 7583229571374456477}
   - component: {fileID: 5634842530879276251}
+  - component: {fileID: 3707097508472160172}
+  - component: {fileID: 1927850075989233087}
+  - component: {fileID: -3831767585307812256}
   m_Layer: 0
   m_Name: Dog_Pug_01
   m_TagString: Untagged
@@ -4860,7 +4863,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
   m_LocalPosition: {x: -0.15, y: 0, z: 20.05}
-  m_LocalScale: {x: 16.759645, y: 5, z: 13.729579}
+  m_LocalScale: {x: 5, y: 5, z: 5}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6896329785577813499}
@@ -4948,6 +4951,66 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e801ec9d13789440bf06f29fca01d04, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &3707097508472160172
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7946647748390021355}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.18048887, y: 0.19755316, z: 0.23156671}
+  m_Center: {x: -0.024735332, y: 0.10849996, z: 0.031767607}
+--- !u!114 &1927850075989233087
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7946647748390021355}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e2886824dcef9349aa41ccd8969a9f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!54 &-3831767585307812256
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7946647748390021355}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &8152209189580955296
 GameObject:
   m_ObjectHideFlags: 0
